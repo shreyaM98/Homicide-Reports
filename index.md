@@ -72,7 +72,7 @@ In total, our new dataset had data for the years 1980 to 2013, with 2014 ultimat
 
 ### Decision Trees and Random Forrests
 
-Next, decision trees and random forrests were implimented. In both cases, the trees were fit with both gini and entropy as the criterion methods. For the decision trees methods, we ran numerical tests on finding the best ccp_alpha value and max depth value to fit various trees. The parameter ccp_alpha finds the weakest nodes and prunes those nodes first versus just pruning any node beyond the maximum depth set with the other parameter. These paramters were optimized under both gini and entropy criterion methods. Below are the results from all of the decision trees. From the results, the highest accuracy was given by the optimal max depth tree using entropy. This tree also had the best F1 score and  precision and was on the higher end of recall scores. As seen in the tree image below, the max depth for this tree was only 3 and the top two most important coumns for predicting the next year were if the state was in the top 10 that year and that years cime rate. 
+Next, decision trees and random forrests were implimented. In both cases, the trees were fit with both gini and entropy as the criterion methods. For the decision trees methods, we ran numerical tests on finding the best ccp_alpha value and max depth value to fit various trees. The parameter ccp_alpha finds the weakest nodes and prunes those nodes first versus just pruning any node beyond the maximum depth set with the other parameter. These paramters were optimized under both gini and entropy criterion methods. Below are the results from all of the decision trees. From the results, the highest accuracy was given by the optimal max depth tree using entropy. This tree also had the best F1 score and  precision and was on the higher end of recall scores. 
 | Tree Type | Accuracy | F1 Score | Precision | Recall |
 | ------------- | ------------- | ------------- | ------------- |------------- |
 | Basic (Gini) | 0.8627 | 0.64 | 0.72 | 0.58 |
@@ -82,6 +82,8 @@ Next, decision trees and random forrests were implimented. In both cases, the tr
 | Optimal Max Depth (Gini) | 0.0.8631 | 0.91 | 0.86 | 0.96 |
 | Optimal Max Depth (Entropy) | 0.9137 | 0.95 | 0.94 | 0.95 |
 
+
+As seen in the tree image below for the best decision tree, the max depth for this tree was only 3 and the top two most important coumns for predicting the next year were if the state was in the top 10 that year and that years cime rate. It is also interesting to discuss the spouse_count column. This column shows the count of spousal murders for that year and the more that a state has in a year, the more likely it will be in the top 10 states the next year. The other column of interest is the solved rate, which shows that with the more unsolved cases, the more likely that the state will be in the top 10 the next year. It can be hypothesized that states with high domestic assault rates are going to experience higher homicide rates and its understandable that having unsolved crimes will only let those murders continue and allow more to feel safe from being caught. 
 
 <img src="Best_tree.PNG" class="inline" class="center" />
 
