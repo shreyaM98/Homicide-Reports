@@ -87,6 +87,7 @@ As seen in the tree image below for the best decision tree, the max depth for th
 
 <img src="Best_tree.PNG" class="inline" class="center" />
 
+For forests, we fit two kinds with just a basic forest and ones optimizing the number of estimators. The basic forest with the entropy was the best result with the highest accuracy, F1 score and recall values. It is interesting that even optimizing the number of estimators used, we still did not get a great result from decision trees. 
 
 | Forrest Type | Accuracy | F1 Score | Precision | Recall |
 | ------------- | ------------- | ------------- | ------------- |------------- |
@@ -96,6 +97,7 @@ As seen in the tree image below for the best decision tree, the max depth for th
 | Optimal Estimators (Entropy) | 0.8627 | 0.92 | 0.87 | 0.98 |
 
 
+Overall, decision trees and random forests were midly succesfull methods with a maximum accuracy of 0.93. It is iteresting that the forests did not do much better than the decision trees. Below are the confusion matrices for the best results. 
 
 
 ### Support Vector Machines
