@@ -9,8 +9,8 @@ The original dataset was based on homicide reports from 1980-2014 from Kaggle. (
 
 | Categorical Columns  | Numeric Columns |
 | ------------- | ------------- |
-| Agency Code  | Incident |
-| Agency Name  | Victim Age |
+| Agency Code*  | Incident* |
+| Agency Name*  | Victim Age |
 | Agency Type | Perpetrator Age  |
 |City | Victim Count  |
 | State  | Perpetrator Count  |
