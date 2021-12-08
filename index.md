@@ -1,16 +1,37 @@
-## Homicide Reports
+# Homicide Reports
 
-### Introduction
-
-
-### Data and Data Cleaning
+## Introduction
 
 
-### Regression Predictions 
+## Data and Data Cleaning
+
+
+## Regression Predictions 
+
+### Linear Regression
+
+### Time Series
+
+### Neural Networks
 
 
 
-### Classification Predictions
+## Classification Predictions
+
+### K-Nearest Neighbors
 
 
-### Conclusion
+### Logistic Regression
+
+
+### Decision Trees and Random Forrests
+
+
+### Support Vector Machines
+
+
+## Ensemble Predictions
+
+
+
+## Conclusion
