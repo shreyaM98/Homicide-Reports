@@ -99,7 +99,7 @@ For forests, we fit two kinds with just a basic forest and ones optimizing the n
 
 Overall, decision trees and random forests were midly succesfull methods with a maximum accuracy of 0.93. It is iteresting that the forests did not do much better than the decision trees. Below are the confusion matrices for the best results, with the tree's confusion matrix on the left and the forests on the right. The random forest had more false negatives, whereas the decision tree had more true negative predictions. OVerall each method was quite accurate in the true positive and had very few fasle postives. One explination for the high false negative rates might be due to the uneven data distributions and that there can only be 10 states in that category a year which the algorithm does not know.
 
-<img src="both_decision.PNG" class="inline" class="center" />
+<img src="both_decision.PNG" class="inline" class="center" width="200"/>
 
 ### Support Vector Machines
 
