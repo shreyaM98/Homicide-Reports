@@ -72,7 +72,7 @@ In total, our new dataset had data for the years 1980 to 2013, with 2014 ultimat
 
 ### Decision Trees and Random Forrests
 
-Next, decision trees and random forrests were implimented. In both cases, the trees were fit with both gini and entropy as the criterion methods. For decision trees methods, we ran numerical tests on finding the best ccp_alpha value and max depth value to fit various trees. The parameter ccp_alpha finds the weakest nodes and prunes those nodes first versus just pruning any node beyond the max depth set with the other parameter. These paramters were optimized under both gini and entropy criterion methods. Below are the results from all of the decision trees. From the results, the highest accuracy was given by the optimal max depth tree using entropy. This tree also had the best F1 score and was on the higher end of precision and recall scores. 
+Next, decision trees and random forrests were implimented. In both cases, the trees were fit with both gini and entropy as the criterion methods. For decision trees methods, we ran numerical tests on finding the best ccp_alpha value and max depth value to fit various trees. The parameter ccp_alpha finds the weakest nodes and prunes those nodes first versus just pruning any node beyond the max depth set with the other parameter. These paramters were optimized under both gini and entropy criterion methods. Below are the results from all of the decision trees. From the results, the highest accuracy was given by the optimal max depth tree using entropy. This tree also had the best F1 score and was on the higher end of precision and recall scores. As seen in the tree image below, the max depth for this tree was only 3. 
 
 | Tree Type | Accuracy | F1 Score | Precision | Recall |
 | ------------- | ------------- | ------------- | ------------- |------------- |
@@ -83,6 +83,8 @@ Next, decision trees and random forrests were implimented. In both cases, the tr
 | Optimal Max Depth (Gini) | 0.0.8631 | 0.91 | 0.86 | 0.96 |
 | Optimal Max Depth (Entropy) | 0.9137 | 0.95 | 0.94 | 0.95 |
 
+
+<img src="Best_tree.PNG" class="inline" class="center" />
 
 
 | Forrest Type | Accuracy | F1 Score | Precision | Recall |
