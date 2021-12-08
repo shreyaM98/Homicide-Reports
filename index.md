@@ -72,6 +72,28 @@ In total, our new dataset had data for the years 1980 to 2013, with 2014 ultimat
 
 ### Decision Trees and Random Forrests
 
+Next, decision trees and random forrests were implimented. In both cases, the trees were fit with both gini and entropy as the criterion methods. For decision trees methods, we ran numerical tests on finding the best ccp_alpha value and max depth value to fit various trees. The parameter ccp_alpha finds the weakest nodes and prunes those nodes first versus just pruning any node beyond the max depth set with the other parameter. These paramters were optimized under both gini and entropy criterion methods. Below are the results from all of the decision trees. From the results, the highest accuracy was given by the optimal max depth tree using entropy. This tree also had the best F1 score and was on the higher end of precision and recall scores. 
+
+| Tree Type | Accuracy | F1 Score | Precision | Recall |
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| Basic (Gini) | 0.8627 | 0.64 | 0.72 | 0.58 |
+| Basic (Entropy) | 0.9745 | 0.92 | 0.89 | 0.95 |
+| Optimal ccp_alpha (Gini) | 0.8588 | 0.92 | 0.88 | 0.96 |
+| Optimal ccp_alpha (Entropy) | 0.8510 | 0.92 | 0.88 | 0.96 |
+| Optimal Max Depth (Gini) | 0.0.8631 | 0.91 | 0.86 | 0.96 |
+| Optimal Max Depth (Entropy) | 0.9137 | 0.95 | 0.94 | 0.95 |
+
+
+
+| Forrest Type | Accuracy | F1 Score | Precision | Recall |
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| Basic (Gini) | 0.8706 | 0.92 | 0.88 | 0.98 |
+| Basic (Entropy) | 0.8745 | 0.93 | 0.88 | 0.97 |
+| Optimal Estimators (Gini) | 0.8588 | 0.92 | 0.87 | 0.98 |
+| Optimal Estimators (Entropy) | 0.8627 | 0.92 | 0.87 | 0.98 |
+
+
+
 
 ### Support Vector Machines
 
