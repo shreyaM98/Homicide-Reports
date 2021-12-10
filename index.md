@@ -35,7 +35,7 @@ The dataset was reorganized such that each row was a yearly summary for a singul
 | ------------- | ------------- |
 | Friend  | Acquaintance, Friend, Neighbor, Employer, Employee |
 | Stranger  | Unknown, Stranger |
-| Spoouse | Wife, Ex-Husband, Husband, Ex-Wife, Common-Law Husband, Common-Law Wife  |
+| Spouse | Wife, Ex-Husband, Husband, Ex-Wife, Common-Law Husband, Common-Law Wife  |
 | Dating | Girlfriend, Boyfriend, Boyfriend/Girlfriend |
 | Sibling  | Brother, Sister  |
 | Child  | Stepdaughter, Son, Daughter, Stepson |
@@ -68,6 +68,13 @@ In total, our new dataset had data for the years 1980 to 2013, with 2014 ultimat
 
 
 ### Logistic Regression
+
+
+### Softmax Regression
+
+After Logistic Regression, we used Softmax Regression to classify the data as well. Implementing Softmax is pretty simple, you just need to set the multi_class argument to 'multinomial'. Aside from this, Softmax is performed the exact same way as Logistic Regression. So, similarly to Logistic Regression, we split the training data into training and validation sets, trained the model, and validated its performance. On the validation data, Softmax achieved a hamming loss of 0.08 and an accuracy of 92%. After this, the trained model was tested on our test data. However, like with Logistic Regression, performance suffered due to the unscaled year values; testing performance yielded a hamming loss of 0.69 and an accuracy of 31%. So we just needed to apply scaling to the year values. Simply put, this just meant treating the year 1980 as year 1, and each subsequent year increases from there. This brought testing performance back in line with what we expected. Our final test performance yielded a hamming loss of 0.12 and accuracy of 88%. 
+
+<img src="softmax_performance.PNG" class="inline" class="center" />
 
 
 ### Decision Trees and Random Forrests
