@@ -55,6 +55,18 @@ In total, our new dataset had data for the years 1980 to 2013, with 2014 ultimat
 ## Regression Predictions 
 
 ### Linear Regression
+The problem statement was implemented using three regression methods with Linear Regression being the first. Initially,the dataset was trained and tested using Multiple Linear Regression method and then Regularization techniques were incorporated to improve the model performance and prevent overfitting on test data. MLP led to poor test R2_score as well weak RMSE score. Using Ridge and Lasso regularization techniques showed significant improvements in the test set results, allowing the model to perform well on an unseen data.The alpha parameter of the Regularization methods were tuned till an extent where the model stopped showing any convergence. Based on the results, Lasso Regularization method showed much better results and minimized the RMSE to a great extent.
+
+
+| Algorithm | R2_score | Mean Absolute Error | Mean Squared Error | Root Mean Squared Error |
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| Linear Regression | 0.346 | 1.380 | 5.03 | 2.243 |
+| Ridge Regression (alpha=0.01) | 0.352 | 1.37 | 4.98 | 2.23 |
+| Lasso Regression (alpha=0.01)| 0.478 | 1.02 | 4.01 | 2.00 |
+| Ridge Regression (alpha=0.5)| 0.397 | 1.27 | 4.63 | 2.15 |
+| Lasso Regression (alpha=0.5)| 0.614 | 0.81 | 2.96 | 1.72 |
+| Ridge Regression (alpha=1.0)| 0.419 | 1.22 | 4.47 | 2.11 |
+| Lasso Regression (alpha=1.0)| 0.638 | 0.77 | 2.78 | 1.66 |
 
 ### Time Series
 
