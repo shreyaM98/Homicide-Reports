@@ -72,7 +72,15 @@ The problem statement was implemented using three regression methods with Linear
 For the Time Series method, a new Dataframe was extracted out of the original dataset consisting of the "year" column and the "No_of_Crime_Rate" column. The 'year' column was converted to datetime format and set as the index column of the new dataframe.
 
 ### Neural Networks
-Next, The neural networks section were applied. At first, a Sequential layer consisting of a single hidden layer of 20 neurons was trained  on the dataset using 'adam' as the optimizer algorithm and 'reLu activation function leading to a modest RMSE. The hidden layers and no of neurons were constantly manipulated to reduce the error rate and reach an optimal model performance. From the results, keeping hidden layers to five with twenty neurons in each layer led to a much less error rate on the testing set 
+Next, The neural networks section were applied. At first, a Sequential layer consisting of a single hidden layer of 20 neurons was trained  on the dataset using 'adam' as the optimizer algorithm and 'reLu activation function leading to a modest RMSE. The hidden layers and no of neurons were constantly manipulated to reduce the error rate and reach an optimal model performance. From the results, keeping hidden layers to five with twenty neurons in each layer led to a much less error rate on the testing set. 
+
+| Hidden layers | Epochs | Mean Absolute Error | Mean Squared Error | Root Mean Squared Error |
+| ------------- | ------------- | ------------- | ------------- |------------- |
+| 1 (20 units) | 250 | 1.702 | 6.147 | 2.479 |
+| 1 (20 units) | 500 | 1.420 | 5.682 | 2.389 |
+| 2 (10 units)| 500 | 1.511 | 5.477 | 2.116 |
+| 3 (20 units)| 500 | 1.263 | 5.538 | 2.353 |
+| 5 (20 units)| 500 | 1.352 | 4.194 | 2.047 |
 
 
 
