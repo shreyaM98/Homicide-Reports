@@ -144,7 +144,7 @@ Overall, decision trees and random forests were midly succesfull methods with a 
 
 ## Conclusion
 
-The table below details the best results for all of the methods described above. Out of all of the regression techniques, linear regression with lasso had the best result with a Root Mean Squared Error (RMSE) of 1.66. With this method, we were only 1.66% away from the true crime rate on average, which is quite close. For classification methods, decision trees had the best accuracy of 91% after being fit with the optimal max depth parameter. For both classification and regression, it is suprising to see that the ensemble methods were no better than the best single method result. This is an indicator that either the methods were not strong enough at prediction or were overfitting to the training data. 
+The table below details the best results for all of the methods described above. Out of all of the regression techniques, linear regression with lasso had the best result with a Root Mean Squared Error (RMSE) of 1.66. With this method, we were only 1.66% away from the true crime rate on average, which is quite close. For classification methods, decision trees had the best accuracy of 91% after being fit with the optimal max depth parameter. For both classification and regression, it is suprising to see that the ensemble methods were no better than the best single method result. This is an indicator that either the methods were not strong enough at prediction or were overfitting to the training data.
 
 | Method | Problem | Result Value | 
 | ------------- | ------------- | ------------- |
@@ -159,5 +159,12 @@ The table below details the best results for all of the methods described above.
 | Random Forrests | Classification | 87% |
 | Regression | Ensemble | 1.99 RMSE |
 | Classification | Ensemble | 89% |
+
+Overall, this problem was difficult due to the data itself. As discussed earlier, the years had to be scaled to help improve overall accuracy of the model. The data was overall skewed. Since any unknown value was set to 0, the means and mins of any numeric column were drastically skewed due to the lack of correct information in the dataset. If better data cleaning was applied to remove and replace the 0 values with the mean or another fill value, this might have increased model performance. 
+In the classification predictions, problems arose from the uneven distribution of classes. Since only 10 states could be in the top 10 each year, that left 40 other states to be in the other category. With the presence of more data, this issue might have been avoided with bootstrapping the dataset. Another possible remedy to this issue could include building more complex models that understand and encoprerate the idea that only 10 states are choosen a year for the Top 10 class. 
+
+
+Future work on this project includes creating a better dataset, investigating other attributes, and building more complex models. As discussed in the previous paragraph, the general makeup of the data caused issues when fitting the model. With better data cleaning and more information about the homicides, the skewness in the data could possibly decrease drastically. We also limited data, with only 1,650 total rows. While more data past 2014 would help with creating a better dataset, any data before 1980 might cause issues due to the drastic differences in crime solving skills as technology has developed. Another thing that the data didn't include was general information about the states, such as non-crime related statistics. Learning more about each state could help determine what other features impact homicide rates, such as domestic abuse might lead to more spousal murders which is an important column as seen in the decision tree section. Lastly, other model types could be fit to more complex models.
+
 
 
