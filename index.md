@@ -69,7 +69,7 @@ The problem statement was implemented using three regression methods with Linear
 | Lasso Regression (alpha=1.0)| 0.638 | 0.77 | 2.78 | 1.66 |
 
 ### Time Series
-For the Time Series method, a new Dataframe was extracted out of the original dataset consisting of the "year" column and the "No_of_Crime_Rate" column. The 'year' column was converted to datetime format and set as the index column of the new dataframe.
+For the Time Series method, a new Dataframe was extracted out of the original dataset consisting of the "year" column and the "No_of_Crime_Rate" column. The 'year' column was converted to datetime format and set as the index column of the new dataframe. The implementation was carried out using two Time-Series methods i.e
 
 ### Neural Networks
 Next, The neural networks section were applied. At first, a Sequential layer consisting of a single hidden layer of 20 neurons was trained  on the dataset using 'adam' as the optimizer algorithm and 'reLu activation function leading to a modest RMSE. The hidden layers and no of neurons were constantly manipulated to reduce the error rate and reach an optimal model performance. From the results, keeping hidden layers to five with twenty neurons in each layer led to a much less error rate on the testing set. 
