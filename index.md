@@ -72,8 +72,8 @@ The problem statement was implemented using three regression methods with Linear
 For the Time Series method, a new Dataframe was extracted out of the original dataset consisting of the "year" column and the "No_of_Crime_Rate" column. The 'year' column was converted to datetime format and set as the index column of the new dataframe. The implementation was carried out using two Time-Series methods beginning with AutoRegressive model, where the lag hyperparameter was tuned and set to 25 in order to reduce the RMSE. The predictions from ARIMA Model (AutoRegressive Integrated Moving Average) were relatively better and accurate resulting in a lower error rate.
 
 <p float="left">
-  <img src="Actual_Test.PNG" width="100" />
-  <img src="Predicted_forecast.PNG" width="100" /> 
+  <img src="Actual_Test.PNG" width="500" />
+  <img src="Predicted_forecast.PNG" width="500" /> 
 </p>
 
 ### Neural Networks
