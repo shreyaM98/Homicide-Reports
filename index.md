@@ -71,7 +71,10 @@ The problem statement was implemented using three regression methods with Linear
 ### Time Series
 For the Time Series method, a new Dataframe was extracted out of the original dataset consisting of the "year" column and the "No_of_Crime_Rate" column. The 'year' column was converted to datetime format and set as the index column of the new dataframe. The implementation was carried out using two Time-Series methods beginning with AutoRegressive model, where the lag hyperparameter was tuned and set to 25 in order to reduce the RMSE. The predictions from ARIMA Model (AutoRegressive Integrated Moving Average) were relatively better and accurate resulting in a lower error rate.
 
-<img src="Actual_Test.PNG" class="inline" class="left" />  <img src="Predicted_forecast.PNG" class="inline" class="right" />
+<p float="left">
+  <img src="Actual_Test.PNG" width="100" />
+  <img src="Predicted_forecast.PNG" width="100" /> 
+</p>
 
 ### Neural Networks
 Next, The neural networks section were applied. At first, a Sequential layer consisting of a single hidden layer of 20 neurons was trained  on the dataset using 'adam' as the optimizer algorithm and 'reLu activation function leading to a modest RMSE. The hidden layers and no of neurons were constantly manipulated to reduce the error rate and reach an optimal model performance. From the results, keeping hidden layers to five with twenty neurons in each layer led to a much less error rate on the testing set. 
