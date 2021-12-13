@@ -143,3 +143,21 @@ Overall, decision trees and random forests were midly succesfull methods with a 
 
 
 ## Conclusion
+
+The table below details the best results for all of the methods described above. Out of all of the regression techniques, linear regression with lasso had the best result with a Root Mean Squared Error (RMSE) of 1.66. With this method, we were only 1.66% away from the true crime rate on average, which is quite close. For classification methods, decision trees had the best accuracy of 91% after being fit with the optimal max depth parameter. For both classification and regression, it is suprising to see that the ensemble methods were no better than the best single method result. This is an indicator that either the methods were not strong enough at prediction or were overfitting to the training data. 
+
+| Method | Problem | Result Value | 
+| ------------- | ------------- | ------------- |
+| Linear Regression (Lasso) | Regression |1.66 RMSE |
+| ANN | Regression |2.047 RMSE |
+| Time Series | Regression | 2.611 RMSE |
+| Logistic Regression | Classification | 88% |
+| KNN | Classification | 83% |
+| SVM | Classification | 89% |
+| Sofmax | Classification | 88% |
+| Decision Trees | Classification | 91% |
+| Random Forrests | Classification | 87% |
+| Regression | Ensemble | 1.99 RMSE |
+| Classification | Ensemble | 89% |
+
+
