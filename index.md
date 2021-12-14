@@ -161,6 +161,14 @@ Overall, decision trees and random forests were midly succesfull methods with a 
 
 ### Support Vector Machines
 
+Similar to Logistic Regression, we performed validation testing on the training data using the train_test_split function from sklearn. Like KNN, SVM is also a fitting algorithm that needs scaling. We used Standard Scalar for SVM. I will subtract the mean from each feature and then scale to unit variance. We used the SVC classifier to fit the model. On the training data, we got Hamming Loss equal to 0.09 which was the best so far and a validation accuracy equal to 91% which was again the best so far.
+
+<img src="svm.png" class="inline" class="center" width="800"/>
+
+Lessons learnt from the Logistic Regression model, we performed test after scaling the years column. On the testing data SVM performed quite well and we got a Hamming Loss equal to 0.11 and testing accuracy equal to 89%. The performance of SVM was better in comparison with KNN and Logistic Regression models.
+
+<img src="svm2.png" class="inline" class="center" width="800"/>
+
 
 ## Ensemble Predictions
 
