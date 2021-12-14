@@ -184,11 +184,12 @@ We also implemented Ensemble Learning on regression models. We took Linear regre
 
 
 
-| Algorithm | Accuracy (Before Boosting) | Accuracy (After Boosting) |                                                                                              | ------------- | ------------- | ------------- | 
-| Gaussian Naive Bayes | 79.21 | 80.0 |
+| Algorithm | Accuracy (Before Boosting) | Accuracy (After Boosting) |
+| ------------- | ------------- | ------------- |  
+| Gaussian Naive Bayes | 79.21 | 80.0 |   
 
 
-| Algorithm | Accuracy (Before Bagging) | Accuracy (After Bagging) | 
+| Algorithm | Accuracy (Before Bagging) | Accuracy (After Bagging) |
 | ------------- | ------------- | ------------- |  
 | Linear Regression | 34.39 | 48.51 |                                          
 
