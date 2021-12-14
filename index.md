@@ -144,6 +144,14 @@ Overall, decision trees and random forests were midly succesfull methods with a 
 
 ## Ensemble Predictions
 
+Ensemble learning was implemented on the results derived from above Regression and Classification techniques. We used Hard voting and Soft Voting, where the maximum values out of all the results was considered in hard voting and the average of all values was considered in Soft voting. 
+Below results present the implementation part for Boosting technique on the regression models. As from the previous results of regression techniques, we got to know Gaussian Naïve Bayes performed the worst out of all the algorithm. Boosting technique is applied on weak learners. After applying boosting algorithm, the accuracy of naïve bayes increased considerably.
+We also implemented Ensemble Learning on regression models. We took Linear regression model and implemented Bagging method, where we divided the set to various subset and applied linear regression on every model and took the average of the output.
+
+<p float="left">
+  <img src="ensemble_1.png" width="200" />
+  <img src="ensemble_2.png" width="200" /> 
+</p>
 
 
 ## Conclusion
