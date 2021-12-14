@@ -101,25 +101,25 @@ For KNN we used the training data to calculate the optimal value of K. We starte
 We computed the optimal value of K by comparing the error rates. We computed error rate as the difference between y_predicted and y_actual. After calculating value of K over a range of 40 positive integers, we got K equal to 5 which had the least error rate of all values. 
 
 
-<img src="knn.png" class="inline" class="center" width="800"/>
+<img src="knn.png" class="inline" class="center" width="600"/>
 
 Further, we the optimal value of K obtained from the training dataset, for our testing data. We got a Hamming Loss value equal to 0.16 and Accuracy equal to 83%. The performance of the model was moderate in comparison with the previous model. While we got these results the Years column was scaled like Logistic Regression.
 
-<img src="knn2.png" class="inline" class="center" width="800"/>
+<img src="knn2.png" class="inline" class="center" width="600"/>
 
 ### Logistic Regression
 
 We used the Logistic Regression classifier from sklearn for our model. Initially, we performed validation testing on the training data and evaluated performance of the model based on the following evaluation metrics (refer to the image). We used the built-in train_test_split function to perform the validation testing on our training data. In addition to the usual evaluation metrics that come with the classification report in sklearn, we also used Hamming loss as one of the evaluation metrics. Hamming loss is the fraction incorrectly classified labels upon the total number of labels. As it is evident from the classification repost below, the model performed moderately well on the training data. We got Hamming Loss value equal to 0.12 which indicates quite good performance considering the upper bound for Hamming Loss which is 1 and the lower bound which is zero. After referring to the classification reports for all the classification models that we used, we decided to go with Accuracy and Hamming Loss as the primary metrics for model performance evaluation. 
 
-<img src="logistic.png" class="inline" class="center" width="800"/>
+<img src="logistic.png" class="inline" class="center" width="600"/>
 
 Further, we tested the model trained on the training data on the testing data. However, the model did not perform well. We got the hamming loss value equal to 0.57 which more than half of the total bound of Hamming Loss. Also, the accuracy for this model dropped to 42% from 88% (validation accuracy).
 
-<img src="logistic_2.png" class="inline" class="center" width="800"/>
+<img src="logistic_2.png" class="inline" class="center" width="600"/>
 
 The potential reason behind the poor performance of the model on the testing data was the prediction column ‘Years’. This is because our dataset was spread across a wide range of years. After scaling the years column, we got better results for the Logistic Regression model on our testing data. We got the hamming Loss value equal to 0.12 that was same as the validation testing and accuracy equal to 88% which was again equal to the validation accuracy.
 
-<img src="logistic_3.png" class="inline" class="center" width="800"/>
+<img src="logistic_3.png" class="inline" class="center" width="600"/>
 
 ### Softmax Regression
 
@@ -163,11 +163,11 @@ Overall, decision trees and random forests were midly succesfull methods with a 
 
 Similar to Logistic Regression, we performed validation testing on the training data using the train_test_split function from sklearn. Like KNN, SVM is also a fitting algorithm that needs scaling. We used Standard Scalar for SVM. I will subtract the mean from each feature and then scale to unit variance. We used the SVC classifier to fit the model. On the training data, we got Hamming Loss equal to 0.09 which was the best so far and a validation accuracy equal to 91% which was again the best so far.
 
-<img src="svm.png" class="inline" class="center" width="800"/>
+<img src="svm.png" class="inline" class="center" width="600"/>
 
 Lessons learnt from the Logistic Regression model, we performed test after scaling the years column. On the testing data SVM performed quite well and we got a Hamming Loss equal to 0.11 and testing accuracy equal to 89%. The performance of SVM was better in comparison with KNN and Logistic Regression models.
 
-<img src="svm2.png" class="inline" class="center" width="800"/>
+<img src="svm2.png" class="inline" class="center" width="600"/>
 
 
 ## Ensemble Predictions
