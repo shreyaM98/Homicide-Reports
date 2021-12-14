@@ -149,8 +149,8 @@ Below results present the implementation part for Boosting technique on the regr
 We also implemented Ensemble Learning on regression models. We took Linear regression model and implemented Bagging method, where we divided the set to various subset and applied linear regression on every model and took the average of the output.
 
 <p float="left">
-  <img src="ensemble_1.png" width="200" />
-  <img src="ensemble_2.png" width="200" /> 
+  <img src="ensemble_1.png" width="450" />
+  <img src="ensemble_2.png" width="450" /> 
 </p>
 
 
