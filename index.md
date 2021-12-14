@@ -104,6 +104,13 @@ We used the Logistic Regression classifier from sklearn for our model. Initially
 
 <img src="logistic.png" class="inline" class="center" />
 
+Further, we tested the model trained on the training data on the testing data. However, the model did not perform well. We got the hamming loss value equal to 0.57 which more than half of the total bound of Hamming Loss. Also, the accuracy for this model dropped to 42% from 88% (validation accuracy).
+
+<img src="logistic_2.png" class="inline" class="center" />
+
+The potential reason behind the poor performance of the model on the testing data was the prediction column ‘Years’. This is because our dataset was spread across a wide range of years. After scaling the years column, we got better results for the Logistic Regression model on our testing data. We got the hamming Loss value equal to 0.12 that was same as the validation testing and accuracy equal to 88% which was again equal to the validation accuracy.
+
+<img src="logistic_3.png" class="inline" class="center" />
 
 ### Softmax Regression
 
