@@ -2,6 +2,10 @@
 
 ## Introduction
 
+Our model addresses both Regression and Classification techniques. The regression techniques focus to look for relationship between crime states and crime rate of the following years. The classification technique focuses on predicting the crime rates to determine the top 10 states for a given year. 
+
+The work done by us can be used for predicting states with high crime rate which can help to determine where resources and program should be focused. The information from the model can be used by people before purchasing houses or making construction decisions. The model can also be used for businesses on prediction to inform security budgets. 
+
 
 ## Data and Data Cleaning
 
