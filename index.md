@@ -102,15 +102,15 @@ Next, The neural networks section were applied. At first, a Sequential layer con
 
 We used the Logistic Regression classifier from sklearn for our model. Initially, we performed validation testing on the training data and evaluated performance of the model based on the following evaluation metrics (refer to the image). We used the built-in train_test_split function to perform the validation testing on our training data. In addition to the usual evaluation metrics that come with the classification report in sklearn, we also used Hamming loss as one of the evaluation metrics. Hamming loss is the fraction incorrectly classified labels upon the total number of labels. As it is evident from the classification repost below, the model performed moderately well on the training data. We got Hamming Loss value equal to 0.12 which indicates quite good performance considering the upper bound for Hamming Loss which is 1 and the lower bound which is zero. After referring to the classification reports for all the classification models that we used, we decided to go with Accuracy and Hamming Loss as the primary metrics for model performance evaluation. 
 
-<img src="logistic.png" class="inline" class="center", width="800"/>
+<img src="logistic.png" class="inline" class="center" width="800"/>
 
 Further, we tested the model trained on the training data on the testing data. However, the model did not perform well. We got the hamming loss value equal to 0.57 which more than half of the total bound of Hamming Loss. Also, the accuracy for this model dropped to 42% from 88% (validation accuracy).
 
-<img src="logistic_2.png" class="inline" class="center", width="800"/>
+<img src="logistic_2.png" class="inline" class="center" width="800"/>
 
 The potential reason behind the poor performance of the model on the testing data was the prediction column ‘Years’. This is because our dataset was spread across a wide range of years. After scaling the years column, we got better results for the Logistic Regression model on our testing data. We got the hamming Loss value equal to 0.12 that was same as the validation testing and accuracy equal to 88% which was again equal to the validation accuracy.
 
-<img src="logistic_3.png" class="inline" class="center", width="800"/>
+<img src="logistic_3.png" class="inline" class="center" width="800"/>
 
 ### Softmax Regression
 
