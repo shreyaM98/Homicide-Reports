@@ -97,6 +97,15 @@ Next, The neural networks section were applied. At first, a Sequential layer con
 
 ### K-Nearest Neighbors
 
+For KNN we used the training data to calculate the optimal value of K. We started with scaling the training data using the Standard scalar. This is essential for KNN as it uses Euclidean Distance to calculate distance between two points. Nearest Neighbors calculation can go wrong if the data is spread over a long range. Thus, it was necessary to scale our training data. 
+We computed the optimal value of K by comparing the error rates. We computed error rate as the difference between y_predicted and y_actual. After calculating value of K over a range of 40 positive integers, we got K equal to 5 which had the least error rate of all values. 
+
+
+<img src="knn.png" class="inline" class="center" width="800"/>
+
+Further, we the optimal value of K obtained from the training dataset, for our testing data. We got a Hamming Loss value equal to 0.16 and Accuracy equal to 83%. The performance of the model was moderate in comparison with the previous model. While we got these results the Years column was scaled like Logistic Regression.
+
+<img src="knn2.png" class="inline" class="center" width="800"/>
 
 ### Logistic Regression
 
