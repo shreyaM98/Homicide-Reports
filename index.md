@@ -100,6 +100,10 @@ Next, The neural networks section were applied. At first, a Sequential layer con
 
 ### Logistic Regression
 
+We used the Logistic Regression classifier from sklearn for our model. Initially, we performed validation testing on the training data and evaluated performance of the model based on the following evaluation metrics (refer to the image). We used the built-in train_test_split function to perform the validation testing on our training data. In addition to the usual evaluation metrics that come with the classification report in sklearn, we also used Hamming loss as one of the evaluation metrics. Hamming loss is the fraction incorrectly classified labels upon the total number of labels. As it is evident from the classification repost below, the model performed moderately well on the training data. We got Hamming Loss value equal to 0.12 which indicates quite good performance considering the upper bound for Hamming Loss which is 1 and the lower bound which is zero. After referring to the classification reports for all the classification models that we used, we decided to go with Accuracy and Hamming Loss as the primary metrics for model performance evaluation. 
+
+<img src="logisitic.png" class="inline" class="center" />
+
 
 ### Softmax Regression
 
